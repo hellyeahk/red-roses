@@ -465,7 +465,7 @@
                 if (openAmount <= 0.01) return;
 
                 const R = this.radius * lerp(0.26, 1.0, easeOutCubic(openAmount));
-                const pulse = 1 + Math.sin(globalTime * 1.8 + this.swayPhase) * 0.014 * openAmount;
+                const pulse = 1 + Math.sin(globalTime * 4.8 + this.swayPhase) * 0.014 * openAmount;
                 const finalR = R * pulse;
 
                 const glowSprite = sprites[this.palette.glow] || sprites.crimson;
