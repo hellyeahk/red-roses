@@ -595,7 +595,7 @@
             drawPlant(context) {
                 if (this.age < 0) return;
 
-                const growT = easeOutCubic(clamp(this.age / 1.8, 0, 1));
+                const growT = easeOutCubic(clamp(this.age / 5.8, 0, 1));
                 const sway = Math.sin(globalTime * 1.45 + this.swayPhase) * 6 + breeze * 22;
                 const tip = this.evalStemPoint(growT, sway);
                 const ctrl = this.evalStemPoint(growT * 0.5, sway * 0.45);
