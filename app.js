@@ -638,7 +638,7 @@
                 context.restore();
 
                 // Cupped velvet rose blossom at stem tip
-                const bloomOpen = easeOutQuint(clamp((this.age - 0.12) / this.bloomDuration, 0, 1));
+                const bloomOpen = easeOutQuint(clamp((this.age - 2.12) / this.bloomDuration, 0, 1));
                 const dynamicTilt = this.headTilt + sway * 0.004;
                 this.drawVelvetRoseHead(context, tip.x, tip.y, bloomOpen, dynamicTilt);
             }
