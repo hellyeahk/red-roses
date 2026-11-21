@@ -251,7 +251,7 @@
                 this.palette = opts.palette || ROSE_PALETTES[0];
                 this.delay = opts.delay || 0;
                 this.age = -this.delay;
-                this.bloomDuration = 7.2;
+                this.bloomDuration = 5.2;
                 this.swayPhase = randomRange(0, Math.PI * 2);
                 this.curveAmp = opts.curveAmp || randomRange(10, 16);
                 this.headTilt = opts.headTilt !== undefined ? opts.headTilt : this.lean * 0.45;
